@@ -93,6 +93,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="editRoom.Designer.vb">
+      <DependentUpon>editRoom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="editRoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -143,8 +149,17 @@
     <Compile Include="roomBook.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="validID.Designer.vb">
+      <DependentUpon>validID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="validID.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="editRoom.resx">
+      <DependentUpon>editRoom.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="roomBook.resx">
       <DependentUpon>roomBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="validID.resx">
+      <DependentUpon>validID.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
