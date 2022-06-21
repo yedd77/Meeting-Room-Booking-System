@@ -35,8 +35,8 @@ Public Class Form1
 		If n >= 0 Then
 			dr = ds.Tables("meeting").Rows(0)
 			With dr
-                meetingSideTittle1.Text = .Item("MeetingTitle")
-                MeetingSideLoc1.Text = .Item("MeetingLocation")
+				meetingSideTittle1.Text = .Item("MeetingTitle")
+				MeetingSideLoc1.Text = .Item("MeetingLocation")
                 MeetingSideTime1.Text = .Item("MeetingTime")
             End With
 			dr = ds.Tables("meeting").Rows(1)
@@ -63,6 +63,6 @@ Public Class Form1
 	End Sub
 
     Private Sub EditBtn_Click(sender As Object, e As EventArgs) Handles EditBtn.Click
-        editRoom.Show()
-    End Sub
+		validID.Show()
+	End Sub
 End Class

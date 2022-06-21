@@ -1,7 +1,6 @@
 ﻿Imports System.Data.OleDb
 
 Public Class roomBook
-
 	Dim ad As New OleDbDataAdapter
 	Dim ds As New DataSet
 	Dim n As Integer

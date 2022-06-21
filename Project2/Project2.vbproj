@@ -126,6 +126,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MeetingDbDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="MeetingDbDataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MeetingDbDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -220,6 +225,17 @@
     </None>
     <None Include="MeetingDbDataSet3.xss">
       <DependentUpon>MeetingDbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="MeetingDbDataSet4.xsc">
+      <DependentUpon>MeetingDbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="MeetingDbDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MeetingDbDataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MeetingDbDataSet4.xss">
+      <DependentUpon>MeetingDbDataSet4.xsd</DependentUpon>
     </None>
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
