@@ -1,6 +1,8 @@
-﻿Imports System.Data.OleDb
+﻿'import package
+Imports System.Data.OleDb
 
 Public Class roomBook
+	'declaration
 	Dim ad As New OleDbDataAdapter
 	Dim ds As New DataSet
 	Dim n As Integer
@@ -14,18 +16,27 @@ Public Class roomBook
 		ad.Fill(ds, "meeting")
 		n = ds.Tables("meeting").Rows.Count - 1
 		con.Close()
+		DayTf.Text = DateTime.Now.ToString("dd")
+		MonthTF.Text = DateTime.Now.ToString("MM")
+		YearTF.Text = DateTime.Now.ToString("yyyy")
+
 	End Sub
 
 	Private Sub BookBtn_Click(sender As Object, e As EventArgs) Handles BookBtn.Click
+		'declaration
 		Dim empIDTF = EmployeeIDTF.Text
 		Dim meetTittle = meetingTittle.Text
-		Dim meetDate = DatePicker.Value.Date.ToString
+		Dim day = DayTf.Text
+		Dim months = MonthTF.Text
+		Dim year = YearTF.Text
+		Dim meetDate = day & "/" & months & "/" & year
 		Dim meetTime = cmbxmeetinTime.Text
 		Dim meetRoom = cmbxmeetRoom.Text
 
 		Dim cmb As New OleDbCommandBuilder
 		cmb.DataAdapter = ad
 
+		'if the field input is empty, appear msgbox
 		If empIDTF = "" Then
 			MessageBox.Show("Please insert your employee Id to book")
 		ElseIf meetTittle = "" Then
@@ -37,6 +48,7 @@ Public Class roomBook
 		ElseIf meetRoom = "" Then
 			MessageBox.Show("Please select meeting room to book")
 		Else
+			'insert data into access
 			Dim roompin = DateTime.Now.ToString("ddHHmmss")
 			Dim dr As DataRow
 			dr = ds.Tables("meeting").NewRow
@@ -64,12 +76,14 @@ Public Class roomBook
 		con.Close()
 	End Sub
 
-	Sub clearControl()
+	Sub clearControl() 'function clear all the field input
 		EmployeeIDTF.Text = ""
 		meetingTittle.Text = ""
 		cmbxmeetinTime.SelectedIndex = 0
 		cmbxmeetRoom.SelectedIndex = 0
-		DatePicker.Value = Now
+		DayTf.Text = ""
+		MonthTF.Text = ""
+		YearTF.Text = ""
 	End Sub
 
 End Class

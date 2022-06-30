@@ -27,13 +27,6 @@ Partial Class Form1
 		Me.PictureBox1 = New System.Windows.Forms.PictureBox()
 		Me.TimeLabel = New System.Windows.Forms.Label()
 		Me.DateLabel = New System.Windows.Forms.Label()
-		Me.PageTittle = New System.Windows.Forms.Label()
-		Me.meetingTittle1 = New System.Windows.Forms.Label()
-		Me.RoomName1 = New System.Windows.Forms.Label()
-		Me.TimeLeft1 = New System.Windows.Forms.Label()
-		Me.meetingTittle2 = New System.Windows.Forms.Label()
-		Me.RoomName2 = New System.Windows.Forms.Label()
-		Me.TimeLeft2 = New System.Windows.Forms.Label()
 		Me.BookBtn = New System.Windows.Forms.Button()
 		Me.EditBtn = New System.Windows.Forms.Button()
 		Me.DisplayBtn = New System.Windows.Forms.Button()
@@ -70,7 +63,7 @@ Partial Class Form1
 		Me.TimeLabel.ForeColor = System.Drawing.Color.White
 		Me.TimeLabel.Location = New System.Drawing.Point(12, 9)
 		Me.TimeLabel.Name = "TimeLabel"
-		Me.TimeLabel.Size = New System.Drawing.Size(140, 54)
+		Me.TimeLabel.Size = New System.Drawing.Size(112, 42)
 		Me.TimeLabel.TabIndex = 1
 		Me.TimeLabel.Text = "00:00"
 		'
@@ -82,93 +75,9 @@ Partial Class Form1
 		Me.DateLabel.ForeColor = System.Drawing.Color.White
 		Me.DateLabel.Location = New System.Drawing.Point(16, 52)
 		Me.DateLabel.Name = "DateLabel"
-		Me.DateLabel.Size = New System.Drawing.Size(126, 39)
+		Me.DateLabel.Size = New System.Drawing.Size(101, 31)
 		Me.DateLabel.TabIndex = 2
 		Me.DateLabel.Text = "00, Apr"
-		'
-		'PageTittle
-		'
-		Me.PageTittle.AutoSize = True
-		Me.PageTittle.BackColor = System.Drawing.Color.Transparent
-		Me.PageTittle.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.PageTittle.ForeColor = System.Drawing.Color.Transparent
-		Me.PageTittle.Location = New System.Drawing.Point(16, 117)
-		Me.PageTittle.Name = "PageTittle"
-		Me.PageTittle.Size = New System.Drawing.Size(285, 42)
-		Me.PageTittle.TabIndex = 3
-		Me.PageTittle.Text = "Current Meeting"
-		'
-		'meetingTittle1
-		'
-		Me.meetingTittle1.AutoSize = True
-		Me.meetingTittle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(154, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(116, Byte), Integer))
-		Me.meetingTittle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.meetingTittle1.ForeColor = System.Drawing.Color.White
-		Me.meetingTittle1.Location = New System.Drawing.Point(16, 176)
-		Me.meetingTittle1.Name = "meetingTittle1"
-		Me.meetingTittle1.Size = New System.Drawing.Size(221, 39)
-		Me.meetingTittle1.TabIndex = 4
-		Me.meetingTittle1.Text = "Meeting Tittle"
-		'
-		'RoomName1
-		'
-		Me.RoomName1.AutoSize = True
-		Me.RoomName1.BackColor = System.Drawing.Color.FromArgb(CType(CType(154, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(116, Byte), Integer))
-		Me.RoomName1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.RoomName1.ForeColor = System.Drawing.Color.White
-		Me.RoomName1.Location = New System.Drawing.Point(16, 211)
-		Me.RoomName1.Name = "RoomName1"
-		Me.RoomName1.Size = New System.Drawing.Size(208, 39)
-		Me.RoomName1.TabIndex = 6
-		Me.RoomName1.Text = "Room Name"
-		'
-		'TimeLeft1
-		'
-		Me.TimeLeft1.AutoSize = True
-		Me.TimeLeft1.BackColor = System.Drawing.Color.FromArgb(CType(CType(154, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(116, Byte), Integer))
-		Me.TimeLeft1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.TimeLeft1.ForeColor = System.Drawing.Color.White
-		Me.TimeLeft1.Location = New System.Drawing.Point(16, 247)
-		Me.TimeLeft1.Name = "TimeLeft1"
-		Me.TimeLeft1.Size = New System.Drawing.Size(136, 36)
-		Me.TimeLeft1.TabIndex = 7
-		Me.TimeLeft1.Text = "Time Left"
-		'
-		'meetingTittle2
-		'
-		Me.meetingTittle2.AutoSize = True
-		Me.meetingTittle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(154, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(116, Byte), Integer))
-		Me.meetingTittle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.meetingTittle2.ForeColor = System.Drawing.Color.White
-		Me.meetingTittle2.Location = New System.Drawing.Point(16, 340)
-		Me.meetingTittle2.Name = "meetingTittle2"
-		Me.meetingTittle2.Size = New System.Drawing.Size(221, 39)
-		Me.meetingTittle2.TabIndex = 8
-		Me.meetingTittle2.Text = "Meeting Tittle"
-		'
-		'RoomName2
-		'
-		Me.RoomName2.AutoSize = True
-		Me.RoomName2.BackColor = System.Drawing.Color.FromArgb(CType(CType(154, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(116, Byte), Integer))
-		Me.RoomName2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.RoomName2.ForeColor = System.Drawing.Color.White
-		Me.RoomName2.Location = New System.Drawing.Point(16, 376)
-		Me.RoomName2.Name = "RoomName2"
-		Me.RoomName2.Size = New System.Drawing.Size(208, 39)
-		Me.RoomName2.TabIndex = 9
-		Me.RoomName2.Text = "Room Name"
-		'
-		'TimeLeft2
-		'
-		Me.TimeLeft2.AutoSize = True
-		Me.TimeLeft2.BackColor = System.Drawing.Color.FromArgb(CType(CType(154, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(116, Byte), Integer))
-		Me.TimeLeft2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.TimeLeft2.ForeColor = System.Drawing.Color.White
-		Me.TimeLeft2.Location = New System.Drawing.Point(16, 412)
-		Me.TimeLeft2.Name = "TimeLeft2"
-		Me.TimeLeft2.Size = New System.Drawing.Size(136, 36)
-		Me.TimeLeft2.TabIndex = 10
-		Me.TimeLeft2.Text = "Time Left"
 		'
 		'BookBtn
 		'
@@ -199,7 +108,7 @@ Partial Class Form1
 		Me.DisplayBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(188, Byte), Integer))
 		Me.DisplayBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
 		Me.DisplayBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.DisplayBtn.Location = New System.Drawing.Point(565, 491)
+		Me.DisplayBtn.Location = New System.Drawing.Point(570, 491)
 		Me.DisplayBtn.Name = "DisplayBtn"
 		Me.DisplayBtn.Size = New System.Drawing.Size(146, 44)
 		Me.DisplayBtn.TabIndex = 13
@@ -214,7 +123,7 @@ Partial Class Form1
 		Me.Label1.ForeColor = System.Drawing.Color.White
 		Me.Label1.Location = New System.Drawing.Point(943, 21)
 		Me.Label1.Name = "Label1"
-		Me.Label1.Size = New System.Drawing.Size(264, 36)
+		Me.Label1.Size = New System.Drawing.Size(216, 29)
 		Me.Label1.TabIndex = 14
 		Me.Label1.Text = "Upcoming Meeting"
 		'
@@ -233,7 +142,7 @@ Partial Class Form1
 		Me.meetingSideTittle1.ForeColor = System.Drawing.Color.White
 		Me.meetingSideTittle1.Location = New System.Drawing.Point(924, 79)
 		Me.meetingSideTittle1.Name = "meetingSideTittle1"
-		Me.meetingSideTittle1.Size = New System.Drawing.Size(177, 31)
+		Me.meetingSideTittle1.Size = New System.Drawing.Size(142, 25)
 		Me.meetingSideTittle1.TabIndex = 16
 		Me.meetingSideTittle1.Text = "Meeting Tittle"
 		'
@@ -245,7 +154,7 @@ Partial Class Form1
 		Me.MeetingSideLoc1.ForeColor = System.Drawing.Color.White
 		Me.MeetingSideLoc1.Location = New System.Drawing.Point(924, 104)
 		Me.MeetingSideLoc1.Name = "MeetingSideLoc1"
-		Me.MeetingSideLoc1.Size = New System.Drawing.Size(197, 29)
+		Me.MeetingSideLoc1.Size = New System.Drawing.Size(154, 24)
 		Me.MeetingSideLoc1.TabIndex = 17
 		Me.MeetingSideLoc1.Text = "Meeting Location"
 		'
@@ -257,7 +166,7 @@ Partial Class Form1
 		Me.MeetingSideTime1.ForeColor = System.Drawing.Color.White
 		Me.MeetingSideTime1.Location = New System.Drawing.Point(925, 128)
 		Me.MeetingSideTime1.Name = "MeetingSideTime1"
-		Me.MeetingSideTime1.Size = New System.Drawing.Size(131, 25)
+		Me.MeetingSideTime1.Size = New System.Drawing.Size(104, 20)
 		Me.MeetingSideTime1.TabIndex = 18
 		Me.MeetingSideTime1.Text = "Meeting Time"
 		'
@@ -269,7 +178,7 @@ Partial Class Form1
 		Me.meetingSideTittle2.ForeColor = System.Drawing.Color.White
 		Me.meetingSideTittle2.Location = New System.Drawing.Point(924, 217)
 		Me.meetingSideTittle2.Name = "meetingSideTittle2"
-		Me.meetingSideTittle2.Size = New System.Drawing.Size(177, 31)
+		Me.meetingSideTittle2.Size = New System.Drawing.Size(142, 25)
 		Me.meetingSideTittle2.TabIndex = 19
 		Me.meetingSideTittle2.Text = "Meeting Tittle"
 		'
@@ -281,7 +190,7 @@ Partial Class Form1
 		Me.MeetingSideLoc2.ForeColor = System.Drawing.Color.White
 		Me.MeetingSideLoc2.Location = New System.Drawing.Point(925, 242)
 		Me.MeetingSideLoc2.Name = "MeetingSideLoc2"
-		Me.MeetingSideLoc2.Size = New System.Drawing.Size(197, 29)
+		Me.MeetingSideLoc2.Size = New System.Drawing.Size(154, 24)
 		Me.MeetingSideLoc2.TabIndex = 20
 		Me.MeetingSideLoc2.Text = "Meeting Location"
 		'
@@ -293,7 +202,7 @@ Partial Class Form1
 		Me.MeetingSideTime2.ForeColor = System.Drawing.Color.White
 		Me.MeetingSideTime2.Location = New System.Drawing.Point(924, 266)
 		Me.MeetingSideTime2.Name = "MeetingSideTime2"
-		Me.MeetingSideTime2.Size = New System.Drawing.Size(131, 25)
+		Me.MeetingSideTime2.Size = New System.Drawing.Size(104, 20)
 		Me.MeetingSideTime2.TabIndex = 21
 		Me.MeetingSideTime2.Text = "Meeting Time"
 		'
@@ -305,7 +214,7 @@ Partial Class Form1
 		Me.meetingSideTittle3.ForeColor = System.Drawing.Color.White
 		Me.meetingSideTittle3.Location = New System.Drawing.Point(924, 358)
 		Me.meetingSideTittle3.Name = "meetingSideTittle3"
-		Me.meetingSideTittle3.Size = New System.Drawing.Size(177, 31)
+		Me.meetingSideTittle3.Size = New System.Drawing.Size(142, 25)
 		Me.meetingSideTittle3.TabIndex = 22
 		Me.meetingSideTittle3.Text = "Meeting Tittle"
 		'
@@ -317,7 +226,7 @@ Partial Class Form1
 		Me.MeetingSideLoc3.ForeColor = System.Drawing.Color.White
 		Me.MeetingSideLoc3.Location = New System.Drawing.Point(925, 383)
 		Me.MeetingSideLoc3.Name = "MeetingSideLoc3"
-		Me.MeetingSideLoc3.Size = New System.Drawing.Size(197, 29)
+		Me.MeetingSideLoc3.Size = New System.Drawing.Size(154, 24)
 		Me.MeetingSideLoc3.TabIndex = 23
 		Me.MeetingSideLoc3.Text = "Meeting Location"
 		'
@@ -329,7 +238,7 @@ Partial Class Form1
 		Me.MeetingSideTime3.ForeColor = System.Drawing.Color.White
 		Me.MeetingSideTime3.Location = New System.Drawing.Point(925, 407)
 		Me.MeetingSideTime3.Name = "MeetingSideTime3"
-		Me.MeetingSideTime3.Size = New System.Drawing.Size(131, 25)
+		Me.MeetingSideTime3.Size = New System.Drawing.Size(104, 20)
 		Me.MeetingSideTime3.TabIndex = 24
 		Me.MeetingSideTime3.Text = "Meeting Time"
 		'
@@ -355,13 +264,6 @@ Partial Class Form1
 		Me.Controls.Add(Me.DisplayBtn)
 		Me.Controls.Add(Me.EditBtn)
 		Me.Controls.Add(Me.BookBtn)
-		Me.Controls.Add(Me.TimeLeft2)
-		Me.Controls.Add(Me.RoomName2)
-		Me.Controls.Add(Me.meetingTittle2)
-		Me.Controls.Add(Me.TimeLeft1)
-		Me.Controls.Add(Me.RoomName1)
-		Me.Controls.Add(Me.meetingTittle1)
-		Me.Controls.Add(Me.PageTittle)
 		Me.Controls.Add(Me.DateLabel)
 		Me.Controls.Add(Me.TimeLabel)
 		Me.Controls.Add(Me.PictureBox1)
@@ -376,13 +278,6 @@ Partial Class Form1
 	Friend WithEvents PictureBox1 As PictureBox
 	Friend WithEvents TimeLabel As Label
 	Friend WithEvents DateLabel As Label
-	Friend WithEvents PageTittle As Label
-	Friend WithEvents meetingTittle1 As Label
-	Friend WithEvents RoomName1 As Label
-	Friend WithEvents TimeLeft1 As Label
-	Friend WithEvents meetingTittle2 As Label
-	Friend WithEvents RoomName2 As Label
-	Friend WithEvents TimeLeft2 As Label
 	Friend WithEvents BookBtn As Button
 	Friend WithEvents EditBtn As Button
 	Friend WithEvents DisplayBtn As Button

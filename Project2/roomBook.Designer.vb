@@ -31,13 +31,15 @@ Partial Class roomBook
 		Me.Label3 = New System.Windows.Forms.Label()
 		Me.EmployeeIDTF = New System.Windows.Forms.TextBox()
 		Me.meetingTittle = New System.Windows.Forms.TextBox()
-		Me.DatePicker = New System.Windows.Forms.DateTimePicker()
 		Me.Label4 = New System.Windows.Forms.Label()
 		Me.Label5 = New System.Windows.Forms.Label()
 		Me.cmbxmeetRoom = New System.Windows.Forms.ComboBox()
 		Me.BookBtn = New System.Windows.Forms.Button()
 		Me.Label6 = New System.Windows.Forms.Label()
 		Me.cmbxmeetinTime = New System.Windows.Forms.ComboBox()
+		Me.DayTf = New System.Windows.Forms.TextBox()
+		Me.MonthTF = New System.Windows.Forms.TextBox()
+		Me.YearTF = New System.Windows.Forms.TextBox()
 		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -80,7 +82,7 @@ Partial Class roomBook
 		Me.Label1.ForeColor = System.Drawing.Color.White
 		Me.Label1.Location = New System.Drawing.Point(159, 9)
 		Me.Label1.Name = "Label1"
-		Me.Label1.Size = New System.Drawing.Size(269, 31)
+		Me.Label1.Size = New System.Drawing.Size(339, 39)
 		Me.Label1.TabIndex = 3
 		Me.Label1.Text = "Book a meeting room"
 		'
@@ -91,7 +93,7 @@ Partial Class roomBook
 		Me.Label2.ForeColor = System.Drawing.Color.White
 		Me.Label2.Location = New System.Drawing.Point(171, 88)
 		Me.Label2.Name = "Label2"
-		Me.Label2.Size = New System.Drawing.Size(100, 20)
+		Me.Label2.Size = New System.Drawing.Size(123, 25)
 		Me.Label2.TabIndex = 4
 		Me.Label2.Text = "Employee ID"
 		'
@@ -102,7 +104,7 @@ Partial Class roomBook
 		Me.Label3.ForeColor = System.Drawing.Color.White
 		Me.Label3.Location = New System.Drawing.Point(171, 153)
 		Me.Label3.Name = "Label3"
-		Me.Label3.Size = New System.Drawing.Size(104, 20)
+		Me.Label3.Size = New System.Drawing.Size(129, 25)
 		Me.Label3.TabIndex = 5
 		Me.Label3.Text = "Meeting Tittle"
 		'
@@ -111,7 +113,7 @@ Partial Class roomBook
 		Me.EmployeeIDTF.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.EmployeeIDTF.Location = New System.Drawing.Point(175, 111)
 		Me.EmployeeIDTF.Name = "EmployeeIDTF"
-		Me.EmployeeIDTF.Size = New System.Drawing.Size(208, 26)
+		Me.EmployeeIDTF.Size = New System.Drawing.Size(208, 30)
 		Me.EmployeeIDTF.TabIndex = 6
 		'
 		'meetingTittle
@@ -119,17 +121,8 @@ Partial Class roomBook
 		Me.meetingTittle.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.meetingTittle.Location = New System.Drawing.Point(175, 176)
 		Me.meetingTittle.Name = "meetingTittle"
-		Me.meetingTittle.Size = New System.Drawing.Size(208, 26)
+		Me.meetingTittle.Size = New System.Drawing.Size(208, 30)
 		Me.meetingTittle.TabIndex = 7
-		'
-		'DatePicker
-		'
-		Me.DatePicker.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.DatePicker.Location = New System.Drawing.Point(175, 245)
-		Me.DatePicker.MinDate = New Date(2022, 6, 19, 0, 0, 0, 0)
-		Me.DatePicker.Name = "DatePicker"
-		Me.DatePicker.Size = New System.Drawing.Size(208, 26)
-		Me.DatePicker.TabIndex = 8
 		'
 		'Label4
 		'
@@ -138,7 +131,7 @@ Partial Class roomBook
 		Me.Label4.ForeColor = System.Drawing.Color.White
 		Me.Label4.Location = New System.Drawing.Point(171, 222)
 		Me.Label4.Name = "Label4"
-		Me.Label4.Size = New System.Drawing.Size(105, 20)
+		Me.Label4.Size = New System.Drawing.Size(128, 25)
 		Me.Label4.TabIndex = 9
 		Me.Label4.Text = "Meeting Date"
 		'
@@ -149,7 +142,7 @@ Partial Class roomBook
 		Me.Label5.ForeColor = System.Drawing.Color.White
 		Me.Label5.Location = New System.Drawing.Point(171, 360)
 		Me.Label5.Name = "Label5"
-		Me.Label5.Size = New System.Drawing.Size(113, 20)
+		Me.Label5.Size = New System.Drawing.Size(138, 25)
 		Me.Label5.TabIndex = 10
 		Me.Label5.Text = "Meeting Room"
 		'
@@ -160,7 +153,7 @@ Partial Class roomBook
 		Me.cmbxmeetRoom.Items.AddRange(New Object() {"Yellow Room", "Red Room", "Green Room", "Meeting Room 1", "Meeting Room 2", "Meeting Room 3", "MeetBox 1", "MeetBox 2", "MeetBox 3"})
 		Me.cmbxmeetRoom.Location = New System.Drawing.Point(175, 383)
 		Me.cmbxmeetRoom.Name = "cmbxmeetRoom"
-		Me.cmbxmeetRoom.Size = New System.Drawing.Size(208, 28)
+		Me.cmbxmeetRoom.Size = New System.Drawing.Size(208, 33)
 		Me.cmbxmeetRoom.TabIndex = 11
 		'
 		'BookBtn
@@ -182,7 +175,7 @@ Partial Class roomBook
 		Me.Label6.ForeColor = System.Drawing.Color.White
 		Me.Label6.Location = New System.Drawing.Point(171, 286)
 		Me.Label6.Name = "Label6"
-		Me.Label6.Size = New System.Drawing.Size(104, 20)
+		Me.Label6.Size = New System.Drawing.Size(131, 25)
 		Me.Label6.TabIndex = 14
 		Me.Label6.Text = "Meeting Time"
 		'
@@ -193,8 +186,32 @@ Partial Class roomBook
 		Me.cmbxmeetinTime.Items.AddRange(New Object() {"0900", "0930", "1000", "1030", "1100", "1130", "1200", "1230", "1300", "1330", "1400", "1430", "1500", "1530", "1600", "1630", "1700"})
 		Me.cmbxmeetinTime.Location = New System.Drawing.Point(175, 309)
 		Me.cmbxmeetinTime.Name = "cmbxmeetinTime"
-		Me.cmbxmeetinTime.Size = New System.Drawing.Size(208, 28)
+		Me.cmbxmeetinTime.Size = New System.Drawing.Size(208, 33)
 		Me.cmbxmeetinTime.TabIndex = 15
+		'
+		'DayTf
+		'
+		Me.DayTf.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.DayTf.Location = New System.Drawing.Point(176, 253)
+		Me.DayTf.Name = "DayTf"
+		Me.DayTf.Size = New System.Drawing.Size(50, 30)
+		Me.DayTf.TabIndex = 16
+		'
+		'MonthTF
+		'
+		Me.MonthTF.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.MonthTF.Location = New System.Drawing.Point(232, 253)
+		Me.MonthTF.Name = "MonthTF"
+		Me.MonthTF.Size = New System.Drawing.Size(45, 30)
+		Me.MonthTF.TabIndex = 17
+		'
+		'YearTF
+		'
+		Me.YearTF.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.YearTF.Location = New System.Drawing.Point(283, 253)
+		Me.YearTF.Name = "YearTF"
+		Me.YearTF.Size = New System.Drawing.Size(100, 30)
+		Me.YearTF.TabIndex = 18
 		'
 		'roomBook
 		'
@@ -202,13 +219,15 @@ Partial Class roomBook
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer))
 		Me.ClientSize = New System.Drawing.Size(637, 463)
+		Me.Controls.Add(Me.YearTF)
+		Me.Controls.Add(Me.MonthTF)
+		Me.Controls.Add(Me.DayTf)
 		Me.Controls.Add(Me.cmbxmeetinTime)
 		Me.Controls.Add(Me.Label6)
 		Me.Controls.Add(Me.BookBtn)
 		Me.Controls.Add(Me.cmbxmeetRoom)
 		Me.Controls.Add(Me.Label5)
 		Me.Controls.Add(Me.Label4)
-		Me.Controls.Add(Me.DatePicker)
 		Me.Controls.Add(Me.meetingTittle)
 		Me.Controls.Add(Me.EmployeeIDTF)
 		Me.Controls.Add(Me.Label3)
@@ -235,11 +254,13 @@ Partial Class roomBook
 	Friend WithEvents Label3 As Label
 	Friend WithEvents EmployeeIDTF As TextBox
 	Friend WithEvents meetingTittle As TextBox
-	Friend WithEvents DatePicker As DateTimePicker
 	Friend WithEvents Label4 As Label
 	Friend WithEvents Label5 As Label
 	Friend WithEvents cmbxmeetRoom As ComboBox
 	Friend WithEvents BookBtn As Button
 	Friend WithEvents Label6 As Label
 	Friend WithEvents cmbxmeetinTime As ComboBox
+	Friend WithEvents DayTf As TextBox
+	Friend WithEvents MonthTF As TextBox
+	Friend WithEvents YearTF As TextBox
 End Class

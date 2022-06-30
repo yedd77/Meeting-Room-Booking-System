@@ -30,12 +30,15 @@ Partial Class editRoom
 		Me.confirmBtn = New System.Windows.Forms.Button()
 		Me.Label2 = New System.Windows.Forms.Label()
 		Me.Label3 = New System.Windows.Forms.Label()
-		Me.meetingDate = New System.Windows.Forms.DateTimePicker()
 		Me.CBmeetTime = New System.Windows.Forms.ComboBox()
 		Me.Label6 = New System.Windows.Forms.Label()
 		Me.CBmeetRoom = New System.Windows.Forms.ComboBox()
 		Me.Label5 = New System.Windows.Forms.Label()
 		Me.meetingTitleTF = New System.Windows.Forms.TextBox()
+		Me.DaysTF = New System.Windows.Forms.TextBox()
+		Me.yearTF = New System.Windows.Forms.TextBox()
+		Me.MonthsTF = New System.Windows.Forms.TextBox()
+		Me.DeleteBtn = New System.Windows.Forms.Button()
 		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -78,7 +81,7 @@ Partial Class editRoom
 		Me.Label1.ForeColor = System.Drawing.Color.White
 		Me.Label1.Location = New System.Drawing.Point(162, 9)
 		Me.Label1.Name = "Label1"
-		Me.Label1.Size = New System.Drawing.Size(386, 39)
+		Me.Label1.Size = New System.Drawing.Size(307, 31)
 		Me.Label1.TabIndex = 6
 		Me.Label1.Text = "Edit Your Meeting Room"
 		'
@@ -87,11 +90,11 @@ Partial Class editRoom
 		Me.confirmBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(188, Byte), Integer))
 		Me.confirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
 		Me.confirmBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.confirmBtn.Location = New System.Drawing.Point(506, 407)
+		Me.confirmBtn.Location = New System.Drawing.Point(600, 402)
 		Me.confirmBtn.Name = "confirmBtn"
 		Me.confirmBtn.Size = New System.Drawing.Size(119, 44)
 		Me.confirmBtn.TabIndex = 13
-		Me.confirmBtn.Text = "CONFIRM"
+		Me.confirmBtn.Text = "Update"
 		Me.confirmBtn.UseVisualStyleBackColor = False
 		'
 		'Label2
@@ -101,7 +104,7 @@ Partial Class editRoom
 		Me.Label2.ForeColor = System.Drawing.Color.White
 		Me.Label2.Location = New System.Drawing.Point(177, 96)
 		Me.Label2.Name = "Label2"
-		Me.Label2.Size = New System.Drawing.Size(124, 25)
+		Me.Label2.Size = New System.Drawing.Size(99, 20)
 		Me.Label2.TabIndex = 14
 		Me.Label2.Text = "Meeting Title"
 		'
@@ -112,27 +115,18 @@ Partial Class editRoom
 		Me.Label3.ForeColor = System.Drawing.Color.White
 		Me.Label3.Location = New System.Drawing.Point(177, 169)
 		Me.Label3.Name = "Label3"
-		Me.Label3.Size = New System.Drawing.Size(128, 25)
+		Me.Label3.Size = New System.Drawing.Size(105, 20)
 		Me.Label3.TabIndex = 16
 		Me.Label3.Text = "Meeting Date"
-		'
-		'meetingDate
-		'
-		Me.meetingDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.meetingDate.Location = New System.Drawing.Point(181, 192)
-		Me.meetingDate.MinDate = New Date(2022, 6, 19, 0, 0, 0, 0)
-		Me.meetingDate.Name = "meetingDate"
-		Me.meetingDate.Size = New System.Drawing.Size(208, 30)
-		Me.meetingDate.TabIndex = 18
 		'
 		'CBmeetTime
 		'
 		Me.CBmeetTime.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.CBmeetTime.FormattingEnabled = True
 		Me.CBmeetTime.Items.AddRange(New Object() {"0900", "0930", "1000", "1030", "1100", "1130", "1200", "1230", "1300", "1330", "1400", "1430", "1500", "1530", "1600", "1630", "1700"})
-		Me.CBmeetTime.Location = New System.Drawing.Point(181, 266)
+		Me.CBmeetTime.Location = New System.Drawing.Point(181, 267)
 		Me.CBmeetTime.Name = "CBmeetTime"
-		Me.CBmeetTime.Size = New System.Drawing.Size(208, 33)
+		Me.CBmeetTime.Size = New System.Drawing.Size(208, 28)
 		Me.CBmeetTime.TabIndex = 20
 		'
 		'Label6
@@ -142,7 +136,7 @@ Partial Class editRoom
 		Me.Label6.ForeColor = System.Drawing.Color.White
 		Me.Label6.Location = New System.Drawing.Point(177, 243)
 		Me.Label6.Name = "Label6"
-		Me.Label6.Size = New System.Drawing.Size(131, 25)
+		Me.Label6.Size = New System.Drawing.Size(104, 20)
 		Me.Label6.TabIndex = 19
 		Me.Label6.Text = "Meeting Time"
 		'
@@ -151,9 +145,9 @@ Partial Class editRoom
 		Me.CBmeetRoom.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.CBmeetRoom.FormattingEnabled = True
 		Me.CBmeetRoom.Items.AddRange(New Object() {"Yellow Room", "Red Room", "Green Room", "Meeting Room 1", "Meeting Room 2", "Meeting Room 3", "MeetBox 1", "MeetBox 2", "MeetBox 3"})
-		Me.CBmeetRoom.Location = New System.Drawing.Point(181, 343)
+		Me.CBmeetRoom.Location = New System.Drawing.Point(181, 344)
 		Me.CBmeetRoom.Name = "CBmeetRoom"
-		Me.CBmeetRoom.Size = New System.Drawing.Size(208, 33)
+		Me.CBmeetRoom.Size = New System.Drawing.Size(208, 28)
 		Me.CBmeetRoom.TabIndex = 22
 		'
 		'Label5
@@ -163,7 +157,7 @@ Partial Class editRoom
 		Me.Label5.ForeColor = System.Drawing.Color.White
 		Me.Label5.Location = New System.Drawing.Point(177, 320)
 		Me.Label5.Name = "Label5"
-		Me.Label5.Size = New System.Drawing.Size(138, 25)
+		Me.Label5.Size = New System.Drawing.Size(113, 20)
 		Me.Label5.TabIndex = 21
 		Me.Label5.Text = "Meeting Room"
 		'
@@ -172,21 +166,60 @@ Partial Class editRoom
 		Me.meetingTitleTF.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.meetingTitleTF.Location = New System.Drawing.Point(182, 124)
 		Me.meetingTitleTF.Name = "meetingTitleTF"
-		Me.meetingTitleTF.Size = New System.Drawing.Size(207, 30)
+		Me.meetingTitleTF.Size = New System.Drawing.Size(207, 26)
 		Me.meetingTitleTF.TabIndex = 23
+		'
+		'DaysTF
+		'
+		Me.DaysTF.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.DaysTF.Location = New System.Drawing.Point(182, 197)
+		Me.DaysTF.Name = "DaysTF"
+		Me.DaysTF.Size = New System.Drawing.Size(49, 26)
+		Me.DaysTF.TabIndex = 24
+		'
+		'yearTF
+		'
+		Me.yearTF.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.yearTF.Location = New System.Drawing.Point(292, 197)
+		Me.yearTF.Name = "yearTF"
+		Me.yearTF.Size = New System.Drawing.Size(97, 26)
+		Me.yearTF.TabIndex = 26
+		'
+		'MonthsTF
+		'
+		Me.MonthsTF.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.MonthsTF.Location = New System.Drawing.Point(237, 197)
+		Me.MonthsTF.Name = "MonthsTF"
+		Me.MonthsTF.Size = New System.Drawing.Size(49, 26)
+		Me.MonthsTF.TabIndex = 27
+		'
+		'DeleteBtn
+		'
+		Me.DeleteBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(188, Byte), Integer))
+		Me.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.DeleteBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.DeleteBtn.Location = New System.Drawing.Point(475, 402)
+		Me.DeleteBtn.Name = "DeleteBtn"
+		Me.DeleteBtn.Size = New System.Drawing.Size(119, 44)
+		Me.DeleteBtn.TabIndex = 28
+		Me.DeleteBtn.Text = "Delete"
+		Me.DeleteBtn.UseVisualStyleBackColor = False
 		'
 		'editRoom
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer))
-		Me.ClientSize = New System.Drawing.Size(637, 463)
+		Me.ClientSize = New System.Drawing.Size(731, 458)
+		Me.Controls.Add(Me.DeleteBtn)
+		Me.Controls.Add(Me.MonthsTF)
+		Me.Controls.Add(Me.yearTF)
+		Me.Controls.Add(Me.DaysTF)
 		Me.Controls.Add(Me.meetingTitleTF)
 		Me.Controls.Add(Me.CBmeetRoom)
 		Me.Controls.Add(Me.Label5)
 		Me.Controls.Add(Me.CBmeetTime)
 		Me.Controls.Add(Me.Label6)
-		Me.Controls.Add(Me.meetingDate)
 		Me.Controls.Add(Me.Label3)
 		Me.Controls.Add(Me.Label2)
 		Me.Controls.Add(Me.confirmBtn)
@@ -212,10 +245,13 @@ Partial Class editRoom
     Friend WithEvents Label2 As Label
     Friend WithEvents meetingPIN As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents meetingDate As DateTimePicker
-    Friend WithEvents CBmeetTime As ComboBox
-    Friend WithEvents Label6 As Label
-    Friend WithEvents CBmeetRoom As ComboBox
-    Friend WithEvents Label5 As Label
+	Friend WithEvents CBmeetTime As ComboBox
+	Friend WithEvents Label6 As Label
+	Friend WithEvents CBmeetRoom As ComboBox
+	Friend WithEvents Label5 As Label
 	Friend WithEvents meetingTitleTF As TextBox
+	Friend WithEvents DaysTF As TextBox
+	Friend WithEvents yearTF As TextBox
+	Friend WithEvents MonthsTF As TextBox
+	Friend WithEvents DeleteBtn As Button
 End Class

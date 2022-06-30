@@ -1,7 +1,8 @@
-﻿Imports System.Data.OleDb
-Imports Module1
+﻿'import package
+Imports System.Data.OleDb
 
 Public Class validID
+	'declaration
 	Dim ad As New OleDbDataAdapter
 	Dim ds As New DataSet
 	Dim n As Integer
@@ -31,12 +32,15 @@ Public Class validID
 			Dim cmd As OleDbCommand = New OleDbCommand(str, con)
 			Dim data As OleDbDataReader = cmd.ExecuteReader()
 
+			'if pin correct, form editRoom will show
 			If data.Read Then
 				meetPin = MeetingPIN.Text
+				con.Close()
 				editRoom.Show()
 			Else
 				MsgBox("Invalid Room PIN", MsgBoxStyle.Critical)
 			End If
+			Me.Close()
 			con.Close()
 			data.Close()
 		Catch ex As Exception
